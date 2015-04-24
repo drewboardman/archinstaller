@@ -122,7 +122,7 @@ else
 			mkfs_options="$fstype";;
 		ext2|ext3|ext4)
 			type mkfs.ext4 > /dev/null || fail 'missing package: e2fsprogs'
-			mkfs_options="${fstype} -q";;
+			mkfs_options="${fstype} -F -q";;
 		f2fs)	type mkfs.f2fs > /dev/null || fail 'missing package: f2fs-tools'
 			packages+=( 'f2fs-tools' )
 			mkfs_options="$fstype";;

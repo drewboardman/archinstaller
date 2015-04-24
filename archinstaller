@@ -141,12 +141,6 @@ else
 fi
 # uefi
 if [[ "$uefi" = 'yes' ]]; then
-	## check if install host is booted in uefi mode
-	if [[ -z "$(mount -t efivarfs)" ]]; then
-		mount -t efivarfs efivarfs /sys/firmware/efi/efivars > /dev/null ||
-		 config_fail 'uefi'
-	fi
-	efivar -l > /dev/null || config_fail 'uefi'
 	## bootloader
 	[[ "$bootloader" = 'grub' || "$bootloader" = 'gummiboot' ]] || config_fail 'bootloader'
 	if [[ "$manual_part" = 'no' ]]; then

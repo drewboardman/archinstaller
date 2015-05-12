@@ -23,6 +23,14 @@ All utilities are included on archiso, which can be downloaded at https://www.ar
  - Boot into the ArchISO USB
  - Connect to a wifi network with `wifi-menu`
  - Sync your pacman with `pacman -Syy
+ - Install the git package `pacman -S git`
+ - Clone the repository
+
+`git clone https://github.com/drewboardman/archinstaller.git`
+
+ - `cd archinstaller`
+ - Run the script with `./archinstaller`
+ - You will be prompted once within the first few seconds, select `yes`
 
 ## Download
 ### With git

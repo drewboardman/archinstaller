@@ -1,0 +1,7 @@
+Description='Automatically generated profile by wifi-menu'
+Interface=wlan0
+Connection=wireless
+Security=wpa
+ESSID=MANDIGITAL
+IP=dhcp
+Key=M@n413mD1g1t@L

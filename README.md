@@ -18,6 +18,12 @@ The required utilities can be installed with the following packages:
 
 All utilities are included on archiso, which can be downloaded at https://www.archlinux.org/download/ .
 
+## Instructions
+
+ - Boot into the ArchISO USB
+ - Connect to a wifi network with `wifi-menu`
+ - Sync your pacman with `pacman -Syy
+
 ## Download
 ### With git
 - clone the repository: `git clone git://github.com/vitamins/archinstaller`
